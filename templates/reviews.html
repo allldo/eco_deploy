@@ -1,0 +1,74 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title  %}
+    Отзывы
+{% endblock title %}
+{% block content %}
+<div class="cont">
+
+            <h1 style="text-align: center; padding-bottom: 5%; margin-top: 3%; font-size: 60px">Отзывы</h1>
+            <div class="GalleryFlex">
+            <div id="gallery">
+                <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/rek01.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek01Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>Нурсат Темир Алматы</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="{% static 'practice-gallery/img/originals/rek02.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek02Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>Allur Auto</figcaption>
+                </figure>
+                <figure class="photo">
+                 <a href="{% static 'practice-gallery/img/originals/rek03.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek03Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>Kazchrome</figcaption>
+                </figure>
+                  </div>
+
+            </div>
+                 <div class="GalleryFlex1">
+<div id="gallery">
+                 <figure class="photo">
+                 <a href="{% static 'practice-gallery/img/originals/rek04.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek04Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>Агрохимия</figcaption>
+                </figure>
+
+
+                 <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/rek05.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek05Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>Озентас</figcaption>
+                </figure>
+                <figure class="photo">
+                    <a href="{% static 'practice-gallery/img/originals/rek06.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek06Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>АО Голд Продукт</figcaption>
+                </figure>
+                </div>
+            </div>
+    <div class="GalleryFlex2">
+<div id="gallery">
+                <figure class="photo">
+                 <a href="{% static 'practice-gallery/img/originals/rek07.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek07Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>Hyundai</figcaption>
+                </figure>
+                 <figure class="photo">
+                 <a href="{% static 'practice-gallery/img/originals/rek08.jpg' %}" data-lightbox="roadtrip" data-title=""><img src="{% static 'practice-gallery/img/rek08Min.jpg' %}" alt="Eagle" /></a>
+                    <figcaption>Kainar</figcaption>
+                </figure>
+</div>
+    </div>
+</div>
+
+</div>
+    <script src="{% static 'practice-gallery/lightbox/js/lightbox-plus-jquery.min.js' %}"></script>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+

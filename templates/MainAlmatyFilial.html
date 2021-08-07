@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}
+    Филиалы
+{% endblock title %}
+{% block content %}
+    <div class="Contacts">
+            <p class="BigWordsContacts">Контакты</p>
+    <div class="CityButtons">
+        <a href="#" class="pseudo-button-active">Алматы</a>
+        <a href="{% url 'taldyk' %}" class="pseudo-button">Талдыкорган</a>
+        <a href="{% url 'Pavlodar' %}" class="pseudo-button" id="pseudo-P">Павлодар</a>
+        <a href="{% url 'Atyrau' %}" class="pseudo-button" id="pseudo-A">Атырау</a>
+    </div>
+        <div class="AddressAndPhoneW">
+            <div class="address1">
+        <p class="AdOp1">Адрес лаборатории</p>
+        <p>г. Алматы <br> улица Сатпаева 88а/1</p>
+        <p class="AdOp1"> Время работы</p>
+        <p>09:00 - 18:00</p>
+    </div>
+    <div class="address">
+        <p class="AdOp1">Адрес офиса</p>
+        <p>г. Алматы <br> улица Сатпаева 88а/1</p>
+        <p class="AdOp1"> Время работы</p>
+        <p>09:00 - 18:00</p>
+    </div>
+    <div class="phoneAndEmail">
+        <p class="AdOp1">Телефон</p>
+        <p>+ 7 (727) 377 86 14</p>
+        <p class="AdOp1">E-mail</p>
+        <p>office@ecoex.kz </p>
+        <p>lab@ecoex.kz</p>
+    </div>
+        </div>
+    </div>
+
+<iframe class="YmapsAlmaty" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7d6014df3efd898d24eebb13175bbcd7d18665b375f9d0115a160a40ddf4f15a&amp;source=constructor" width="700" height="400" frameborder="0" style="margin-left: 34vw"></iframe>
+{% endblock content %}

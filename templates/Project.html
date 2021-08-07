@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+{% block title %}
+    Проекты
+{% endblock title %}
+{% block content %}
+    <h1 style="color: black; font-weight: bold; text-align: center">Выполненные проекты</h1>
+           {% for project in Allprojects.all %}
+                <h2 style="text-align: center; font-size: 25px; display: flex; justify-content: space-around; flex-wrap: nowrap">{{ project.name }},</h2>
+    {% endfor %}
+{% endblock content %}

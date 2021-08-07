@@ -1,0 +1,934 @@
+
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all .25s ease;
+}
+
+html, body {
+  width: 100%;
+    height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.span{
+    margin-top: 11vh;
+    margin-left: 18vw;
+    width: 35%;
+    color: white;
+    position: absolute;
+    height: 3vh;
+}
+
+#header{
+    height: 8vh;
+    width: 100%;
+    background: azure;
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+}
+.mainLinks{
+    padding-top: 1vh;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.mainLinks:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+.ttt{
+    font-size: 34px;
+      display: inline-block;
+}
+#search_icon{
+    border: 0;
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    background: url("search.png");
+    margin-top: 0.6vh;
+}
+#hiddenDiv{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: none;
+    position: fixed;
+}
+.mainm{
+    height: 65%;
+    width: 75%;
+    position: absolute;
+    z-index: 1;
+    left:10%;
+     top: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.some_class{
+    font-weight: bold;
+    color: white;
+        font-size: 55px;
+    line-height: 100%;
+       padding-left: 5%;
+       padding-right: 5%;
+}
+.descrip{
+    margin-top: 3vh;
+    margin-left:4vw;
+    border-left: 3px black solid;
+    font-size:34px;
+    color:white;
+    font-weight: bolder;
+}
+
+.years{
+    position: relative;
+        text-align: center;
+    margin-top: 3%;
+}
+.projects{
+    position: relative;
+        text-align: center;
+    margin-top: 3%;
+}
+.projectNum>p{
+    font-size: 50px;
+    margin-bottom: 0.4vh;
+    margin-left: -8vh;
+}
+.projectNum:after{
+     background-color: whitesmoke;
+    content: "";
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    margin-left: -5.2vw;
+}
+.projectNum{
+    height: 11vh;
+}
+.ProjectText{
+
+}
+.numOfYears::after {
+    background-color: whitesmoke;
+    content: "";
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    margin-left: -1.6vw;
+}
+.numOfYears>p{
+    font-size:50px;
+    margin-bottom: 0.4vh;
+    margin-right: 1vw;
+}
+.numOfYears{
+    color: indianred;
+    height: 10vh;
+    position: relative;
+    margin-right: 2.8vw;
+}
+.TextYears{
+    margin-top: 1vh;
+}
+
+
+.forImage{
+   padding-left: 5%;
+    width: 13vw;
+    height: 13vh;
+    position: relative;
+}
+.fillials{
+        position: relative;
+        text-align: center;
+        margin-top: 3%;
+}
+.numberFil>p{
+    margin-bottom: 0.4vh;
+    margin-right: 2.5vw;
+}
+.numberFil{
+    height: 10vh;
+    position: relative;
+}
+
+.numberFil::after{
+   background-color: whitesmoke;
+    content: "";
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    margin-left: -2.4vw;
+
+}
+.btn-group{
+    margin-left: 5vw;
+}
+
+.fillials>.numberFil{
+    font-size:50px;
+    color: coral;
+    margin-right: 0.2vw;
+}
+
+.fillials>.textFil{
+    margin-top: 1vh;
+    height: 10vh;
+    text-align: center;
+}
+.lab::after{
+    margin-top: 5.3vh;
+    background-color: whitesmoke;
+    content: "";
+    width: 55px;
+    height: 3px;
+    position: absolute;
+}
+.myh4{
+    margin-top: 3.4vh;
+    width: 30px;
+
+}
+.lab{
+    margin-left: 2.75%;
+    margin-top: 6vh;
+    background: url("micro.png")no-repeat;
+    width: 64px;
+    height: 64px;
+    position: relative;
+
+}
+.achRow{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    height: 35%;
+    font-size: 17px;
+    font-weight: bolder;
+    color: greenyellow;
+}
+#showBack {
+    cursor: pointer;
+position: absolute;
+right: 40px;
+top: 40px;
+width: 40px;
+height: 40px;
+opacity: 0.5;
+}
+#showBack:hover {
+opacity: 1.3;
+
+}
+#showBack:before, #showBack:after {
+position: absolute;
+left: 15px;
+content: ' ';
+height: 45px;
+width: 2px;
+background-color: #333;
+}
+#showBack:before {
+transform: rotate(45deg);
+}
+#showBack:after {
+transform: rotate(-45deg);
+}
+.searching{
+    position: relative;
+
+}
+.textFSearch{
+    margin-bottom: 5vh;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    font-size: 50px;
+}
+#hidden_search{
+    margin-left: 5vw;
+    margin-top: 15vh;
+}
+#carouselExampleControls{
+    position: relative;
+    background-color: black;
+    opacity: 0.5;
+}
+.darkenBack{
+    background-color: black;
+    opacity: 1;
+}
+#footer{
+    flex: 0 0 auto;
+    position: relative;
+    display: flex;
+    border-top: 4px solid gray;
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    padding: 2% 0;
+    background: url("footer-background-011.jpg") no-repeat;
+ }
+.DivLinksFooter{
+    width: 35%;
+    padding-left: 15%;
+}
+.footerLinks{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+
+#footerL1{
+
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 3em 0 3em;
+}
+li{
+    line-height: 175%;
+
+}
+p{
+    margin-bottom: 5px;
+}
+a.footerLinks:hover{
+    color: aqua;
+    text-decoration: none;
+}
+.c2020{
+    padding-top: 1%;
+    font-size: 17px;
+    margin-left: 30%;
+    padding-right: 3%;
+
+}
+
+.innerofspan{
+display: flex;
+   margin-top: 9vh;
+}
+
+.first{
+    text-align: center;
+    margin:15px 0;
+    display: inline-block;
+    width: 155px;
+    height: 155px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+.aboutUs{
+    border: 3px solid 	#00008B;
+    font-size: 15px;
+    line-height: 1.9;
+    width: 60%;
+    margin: 2vh auto;
+}
+.aboutUs>li, .aboutUs>p{
+    margin-left: 2vw;
+}
+.aboutUs>ul{
+    padding-left: 6em;
+}
+.JFB{
+    background-color: #cccccc;
+}
+
+.TheyUsedTech{
+
+    margin-bottom: 0;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+.Partners{
+    height: 15vh;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Partners1{
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.FoodMaster{
+    background-image: url("logo.png");
+    width: 59px;
+    height: 50px;
+ background-repeat: no-repeat;
+}
+.Sinoil{
+    background-image: url("sinoil.png");
+     background-repeat: no-repeat;
+    width: 138px;
+    height: 23px;
+}
+.kcell{
+    background-image: url("kcell.png");
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 30px;
+}
+.Shlumberge{
+    background-image: url("logo-white.png");
+    width: 158px;
+    background-repeat: no-repeat;
+    height: 37px;
+}
+.kagazy{
+    background-image: url("alina.png");
+    width: 167px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+.kainar{
+    background-repeat: no-repeat;
+    background-image: url("kainar-logo.png");
+    width: 224px;
+    height: 140px;
+}
+.hoffman{
+    background-repeat: no-repeat;
+    background-image: url("hoffman.png");
+    width: 268px;
+    height: 100px;
+}
+/* Reviews page css*/
+
+.cont{
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #c1c2c7;
+}
+figcaption{
+
+}
+.GalleryFlex, .GalleryFlex1, .GalleryFlex2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.GalleryFlex1 a{
+        margin-left: 5%;
+    margin-right: 5%;
+}
+ .GalleryFlex a{
+        margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+
+
+
+/* Contacts page css */
+.CityButtons>a{
+
+    text-decoration: none;
+}
+.BigWordsContacts{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10vh;
+}
+.Contacts{
+
+}
+.CityButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.address{
+
+}
+
+.pseudo-button, .pseudo-button-active{
+    color: #000000;
+    border-radius: 4px;
+    font-size: 21px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #eeeeee;
+}
+.pseudo-button:hover{
+    background: #cacaca;
+    text-decoration: none;
+    color: #000000;
+}
+ .pseudo-button-active:hover{
+     background: darkseagreen;
+     text-decoration: none;
+     color: #000000;
+ }
+.pseudo-button-active{
+    background: darkseagreen;
+}
+.phoneAndEmail{
+
+}
+.AddressAndPhoneW{
+    display: flex;
+    height: 45vh;
+}
+.phoneAndEmail{
+    margin-top: 7vh;
+    margin-left: 7vw;
+}
+.address{
+    margin-top: 7vh;
+    margin-left: 14vh;
+}
+.AdOp1{
+    color: #999999;
+}
+.address1{
+    margin-top: 7vh;
+    margin-left: 35vw;
+}
+
+
+
+
+/* Services page css*/
+.OurServices{
+    height: 45vh;
+}
+.OurServicesText{
+    padding-bottom: 1vh;
+    margin: 0 auto;
+    width: 30vw;
+    text-align: center;
+    border-bottom: 1px solid indianred;
+}
+.TypesOfService{
+    margin-top: 3vh;
+   justify-content: space-evenly;
+    display: flex;
+}
+.GalleryFlexService{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Services{
+    width: 100%;
+    height: 15%;
+    display: block;
+}
+.ReguServc{
+    margin-left: 16%;
+}
+.FlexServices{
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.contService{
+    margin: 0;
+    padding:0;
+
+}
+
+
+
+/*End of service's page css */
+
+
+.toggle::after{
+        display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+
+
+
+/*Верстка под устройства с максимальной шириной 700 пх */
+@media  (max-width:700px){
+    .ReguServc{
+    margin-left: 5%;
+}
+    #gallery{
+        width: 100%;
+        flex-wrap: wrap;
+         display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #fafafa;
+    }
+    #Unbel{
+        padding-top: 5vh;
+    }
+    .photo{
+        float: none;
+    }
+    .GalleryFlexService{
+
+}
+.Services{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-group>span{
+    font-size: 1px;
+}
+    .btn-group{
+        margin-right: 5vw;
+        margin-top: 2vh;
+    }
+.Quote>p::after, .Quote>p::before
+{
+    font-size: 20px;
+}
+    .Quote{
+        font-size: 20px;
+    }
+    .aboutUs{
+        width: 100%;
+        height: 310%;
+        padding-left: 2em;
+    }
+    .kagazy{
+       margin: 0;
+    }
+
+    .hoffman{
+        margin: 0;
+    }
+    .kainar{
+       margin: 0;
+    }
+
+    .JFB{
+
+            height: 35vh;
+
+    }
+    .TheyUsedTech{
+        font-size: 22px;
+    }
+    .Partners1{
+        display: none;
+        height: 85%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .YmapsAlmaty{
+   display: none;
+    }
+    #pseudo-A{
+        margin-right: 13vw;
+    }
+    .BigWordsContacts{
+        margin-bottom: 3vh;
+    }
+    .pseudo-button-active, .pseudo-button{
+        margin-bottom: 2vh;
+    }
+    .CityButtons{
+        margin-bottom: 2vh;
+    }
+    .address1, .address{
+        margin-left: 11vw;
+        margin-top: 1vh;
+    }
+      .phoneAndEmail{
+          line-height: 19px;
+              margin-left: 9vw;
+             margin-top: 0;
+    }
+    .address1, .address, .phoneAndEmail{
+        font-size: 11px;
+    }
+    #search_icon{
+        background-image: url("SmallSearch.png");
+        width: 16px;
+        height: 16px;
+        margin-top: 2.6vh;
+    }
+
+    .DivLinksFooter{
+        display: inline-flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .projects, .projectNum{
+        width: 95%;
+        height: 25%;
+        padding-bottom: 5vh;
+        margin-left: 3vw;
+
+    }
+    #header{
+        height: 8%;
+    }
+    .lab::after{
+        margin-top: 1.7vh;
+        height: 0.3vh;
+        width: 25px;
+    }
+    .numOfYears{
+        width: auto;
+        height: auto;
+        margin-right: 13vw;
+    }
+    .projectNum::after{
+        height: 0.3vh;
+        margin-left: -13vw;
+        width: 25px;
+    }
+    .numOfYears::after{
+        height: 0.3vh;
+        margin-left: -3vw;
+        width: 25px;
+    }
+    .years{
+        display: flex;
+        flex-direction: column;
+        vertical-align: center;
+    }
+    .myh4{
+        margin-top: 2vh;
+        position: relative;
+     }
+    .projects {
+        width: 25%;
+    }
+    .forImage{
+        flex-direction: column;
+        display: flex;
+    height: 25vh;
+        width: 25vw;
+        vertical-align: center;
+    }
+    .achRow{
+        height: 100%;
+        margin-top: 0;
+        width: 100%;
+    }
+    .lab{
+        margin-top: 0;
+        background-image: url("microSmall.png");
+        width: 32px;
+        height: 32px;
+    }
+    .mainLinks {
+        font-size: 15px;
+        padding-top: 2vh;
+    }
+    .some_class{
+        font-size: 20px;
+
+    }
+    .mainm{
+        width: 100%;
+        top: 9%;
+        height: 30vh;
+        left:0;
+    }
+    .descrip{
+        font-size: 15px;
+    }
+    .myh4, .years, .projects{
+        font-size: 11px;
+    }
+    .projectNum>p {
+        font-size: 14px;
+    }
+    .numOfYears>p{
+        font-size: 14px;
+    }
+    .DivLinksFooter{
+
+        padding-left:5%;
+    }
+    .footerLinks{
+        line-height: 20px;
+    font-size: 13px;
+    }
+
+
+    #footer{
+
+        width: 100%;
+    }
+    .span{
+        font-size: 9px;
+        color:#fafafa;
+        margin-top: 10vh;
+        display: flex;
+       margin-left: 65vw;
+        flex-direction: row;
+        white-space: nowrap;
+    }
+    .innerofspan{
+        font-size:11px;
+        margin-top: 6vh;
+        margin-left: 39vw;
+    }
+    #footerL1{
+        padding: 0 0 0 3em;
+    }
+
+
+}
+/* Конец верстки под 700 пх*/
+/*Верстка под устройства менее 321 пх*/
+@media  (max-width:375px){
+    .ReguServc{
+    margin-left: 1%;
+}
+    #mbss{
+        white-space: pre;
+    }
+    .kagazy{
+        width: 300px;
+    }
+     .aboutUs{
+        width: 100%;
+        height: 550%;
+        padding-left: 2em;
+    }
+    .hoffman{
+        margin: 0 0 0 13vw;
+    }
+    .Partners1{
+        height: 80%;
+        margin-left: 1vw;
+    }
+    .kainar{
+        margin-top: 1vh;
+        margin-left: 13vw   ;
+    }
+     .YmapsAlmaty{
+   display: none;
+    }
+    #pseudo-A{
+        margin-right: 13vw;
+    }
+    .CityButtons{
+        display: inline-flex;
+    }
+    .address1, .address, .phoneAndEmail{
+        margin-left: 2vh;
+    }
+
+    .some_class{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .lab::after{
+        margin-top: 4.4vh;
+    }
+    .lab{
+
+    }
+    .descrip{
+        font-size: 11px;
+        margin-top: 1vh;
+    }
+    .TextYears{
+        margin-top: 2vh;
+    }
+    .years{
+        margin-left: 5vw;
+    }
+    .ProjectText{
+        margin-top: 1vh;
+    }
+    .achRow{
+        margin-top: 3.3vh;
+        font-size: 8px;
+    }
+   #footer{
+       font-size: 9px;
+   }
+    .span{
+        font-size: 9px;
+        margin-left: 65vw;
+        margin-top: 7vh;
+    }
+}
+
+@media (min-width: 701px) and (max-width:1024px) {
+    .some_class{
+        font-size: 30px;
+    }
+    .numOfYears>p, .projectNum>p{
+        font-size: 37px;
+    }
+    .numOfYears{
+        height: 7vh;
+    }
+    .projectNum{
+        height: 7vh;
+    }
+    .achRow{
+        margin-top: 1vh;
+        justify-content: space-between;
+    }
+    .lab, .descrip{
+        margin-top: 1vh;
+    }
+    .TextYears{
+        margin-top: 0;
+    }
+    .myh4{
+        margin-top: 1.6vh;
+    }
+    .DivLinksFooter{
+        width: 100%;
+    }
+    .YmapsAlmaty{
+   display: none;
+    }
+    .address1{
+        margin-left: 5vw;
+    }
+    .AddressAndPhoneW{
+        font-size: 17px;
+    }
+    .BigWordsContacts{
+        margin-bottom: 5vh;
+    }
+    .aboutUs{
+
+        font-size: 17px;
+        margin-right: 0;
+        padding-left: 5vw;
+    }
+
+}
+
+

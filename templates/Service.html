@@ -1,0 +1,114 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}
+    Наши услуги
+{% endblock title %}
+{% block content %}
+    <head><meta name="description" content="xzjfiosfhuia"></head>
+<div style="background-color: #cccccc;">
+<div class="ReguServc">
+         <p style="font-size: 35px; margin-left: 25vw;">Список наших услуг</p>
+    <div class="Services">
+        <div class="btn-group">
+        <button class="btn btn-danger btn-lg toggle" type="button" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="false">
+           <span> Разработка нормативной документации</span>
+        </button>
+              <div class="dropdown-menu">
+                        <a class="dropdown-item">Проект ОВОС</a>
+                        <a class="dropdown-item">Проект ПДВ</a>
+                        <a class="dropdown-item">Проект ПНРО с разработкой программы управления отдоходами</a>
+                        <a class="dropdown-item">Проект обоснования санитарно-защитной зоны</a>
+                        <a class="dropdown-item">Разработка паспортов опасных отходов</a>
+                        <a class="dropdown-item">Разработка удельных норм водопотребления и получения разрешения на спецводопользование</a>
+                       <a class="dropdown-item">Инвентаризация источников парниковых газов</a>
+                        <a class="dropdown-item">Проведение экологического аудита</a>
+                        <a class="dropdown-item">Проведение аудита по охране труда и технике безопасности</a>
+
+              </div>
+            </div>
+    <div class="btn-group">
+  <button class="btn btn-danger btn-lg toggle" type="button" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+   Лаборатория
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Проведение инструментальных замеров на источниках выбрсов</a>
+    <a class="dropdown-item">Замеры атмосферного воздуха на санитарно-защитной зоне объекта</a>
+      <a class="dropdown-item">Инструментальные замеры в воздухе рабочей зоны</a>
+      <a class="dropdown-item">Инструментальные замеры физических факторов производственной и окружающей среды</a>
+      <a class="dropdown-item">Аттестация рабочих мест по условиям труда</a>
+    <a class="dropdown-item">Составление ППК (программа производственного контроля)</a>
+  </div>
+</div>
+    <div class="btn-group">
+  <button class="btn btn-danger btn-lg dropdown-toggle" id="mbss"type="button" data-toggle="dropdown"
+    aria-haspopup="true" aria-expanded="false">
+Экологическое обслуживание
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item">Расчеты к ф.870, 2 ТП-воздух, 2 ТП-водхоз, 4 ОС</a>
+    <a class="dropdown-item" >Отчет по производственному экологическому контролю</a>
+    <a class="dropdown-item" >Отчет по выполнению плана природоохранных мероприятий и условий природопользования</a>
+      <a class="dropdown-item" >Отчет по инвентаризации опасных отходов</a>
+  </div>
+</div>
+    </div>
+
+</div>
+  <div class="contService">
+  <h1 style="text-align: center; margin: 5vh 0 5vh 0">Разрешительные документы</h1>
+   <div class="GalleryFlexService">
+            <div id="gallery">
+
+
+                <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/accredit.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/accreditMin.jpg' %}" alt="" /></a>
+
+                </figure>
+                <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/mooc.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/Mooc1Min.jpg' %}" alt="" /></a>
+
+                </figure>
+                  <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/mooc2.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/mooc2Min.jpg' %}" alt="" /></a>
+
+                </figure>
+                <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/mooc3.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/mooc3Min.jpg' %}" alt="" /></a>
+
+                </figure>
+                <figure class="photo" id="Unbel">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/aydit.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/ayditMin.jpg' %}" alt="" /></a>
+                </figure>
+
+
+
+                   <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/ohsas.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/ohsasMin.jpg' %}" alt="" /></a>
+
+                </figure>
+                <figure class="photo">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/iso.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/isoMin.jpg' %}" alt="" /></a>
+
+                </figure>
+                  </figure>
+                 <figure class="photo" id="Unbel">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/iso2.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/iso2Min.jpg' %}" alt="" /></a>
+                </figure>
+                <figure class="photo" id="Unbel">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/atom.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/atomMin.jpg' %}" alt="" /></a>
+
+                </figure>
+                  <figure class="photo" id="Unbel">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/atomor.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/atomorMin.jpg' %}" alt="" /></a>
+                </figure>
+                 <figure class="photo" id="Unbel">
+                    <a class="fancybox" href="{% static 'practice-gallery/img/originals/prombez.jpg' %}" data-lightbox="roadtrip" ><img src="{% static 'practice-gallery/img/prombezMin.jpg' %}" alt="" /></a>
+                </figure>
+            </div>
+   </div>
+  </div>
+    <script src="{% static 'practice-gallery/lightbox/js/lightbox-plus-jquery.min.js' %}"></script>
+</div >
+{% endblock content %}

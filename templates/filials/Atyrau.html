@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}
+    Филиалы
+{% endblock title %}
+{% block content %}
+    <div class="Contacts">
+            <p class="BigWordsContacts">Контакты</p>
+     <div class="CityButtons">
+        <a href="{% url 'contacts' %}" class="pseudo-button">Алматы</a>
+        <a href="{% url 'taldyk' %}" class="pseudo-button">Талдыкорган</a>
+        <a href="{% url 'Pavlodar' %}" class="pseudo-button">Павлодар</a>
+        <a href="{% url 'Atyrau' %}" class="pseudo-button-active">Атырау</a>
+    </div>
+        <div class="AddressAndPhoneW">
+
+    <div class="address">
+        <p class="AdOp1">Адрес офиса</p>
+        <p>г. Атырау <br> улица Гурьева, д. 5, офис 13 </p>
+        <p class="AdOp1"> Время работы</p>
+        <p>09:00 - 18:00</p>
+    </div>
+    <div class="phoneAndEmail">
+        <p class="AdOp1">Телефон</p>
+        <p>+7 777 2600809</p>
+        <p class="AdOp1">E-mail</p>
+        <p>office@ecoex.kz</p>
+    </div>
+        </div>
+    </div>
+    
+{% endblock content %}
