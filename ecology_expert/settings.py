@@ -8,22 +8,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEBUG = False
 
 ALLOWED_HOSTS = ['ecology-expert.kz', 'www.ecology-expert.kz']
-with open(os.path.join(BASE_DIR, 'secrets.json')) as secrets_file:
-    secrets = json.load(secrets_file)
-
-
-def get_secret(setting, secrets=secrets):
-    """Get secret setting or fail with ImproperlyConfigured"""
-    try:
-        return secrets[setting]
-    except KeyError:
-        raise ImproperlyConfigured("Set the {} setting".format(setting))
-
 
 # Application definition
 
-
-SECRET_KEY = get_secret('SECRET_KEY')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -68,11 +55,11 @@ WSGI_APPLICATION = 'ecology_expert.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django_db',
-        'USER' : 'user_name',
-        'PASSWORD' : 'password',
-        'HOST' : 'localhost',
-        'PORT' : '',
+        'NAME': 'ecoexdb',
+        'USER': 'postgres',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
