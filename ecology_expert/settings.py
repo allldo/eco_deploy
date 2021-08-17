@@ -6,6 +6,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 DEBUG = False
+SECRET_KEY = 'z@mw5+@*vzvjk6el1s82!!n6du2$6634%6bn$*@bsv_pb-iyit'
 
 ALLOWED_HOSTS = ['ecology-expert.kz', 'www.ecology-expert.kz']
 
